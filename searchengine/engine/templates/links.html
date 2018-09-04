@@ -1,0 +1,33 @@
+
+
+{% block title%}Links Query {% endblock %}
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+body {
+    background-color: ;
+}
+</style>
+  </head>
+  <body>
+
+    {% for link in links %}
+            {% for l in link %}
+
+
+            <h1><a href="http://{{l}}">{{l}}</a></h1>
+           <!--  <td align="center"><a href="http://{{l.1}}">{{l.1}}</a></td> -->
+
+            <!-- <td align="center"><a href="http://{{l}}">{{l}}</a></td> -->
+
+
+            {% endfor %}
+          {% endfor %}
+
+  </body>
+</html>
